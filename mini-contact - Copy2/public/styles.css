@@ -1,0 +1,585 @@
+/* General Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h3, p {
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #009688;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .site-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+nav .site-title p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+/* Main Content Section */
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Contact List */
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Contact Details */
+.contact-detail img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-detail h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-detail h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-detail p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Add Contact Form */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+}
+
+form label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00796b;
+}
+
+/* Delete Button */
+.delete img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Empty Contact List */
+.contact-empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 50px;
+}
+
+/* Error Page */
+.error-page {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+  color: #ff5733;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav .site-title h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .contact-detail img {
+    height: 250px;
+  }
+}
+/* index styles */
+/* Style for the index div */
+.index {
+  width: 80%;
+  margin: 40px auto; /* Centers the container */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.index h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the individual contact links */
+.index a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on each contact link */
+.index a:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the contact title */
+.index a h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for the contact snippet (description or subtitle) */
+.index a h3 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Style for the contact image */
+.index a img {
+  width: 150px;  /* Set a fixed width for the image */
+  height: 150px; /* Maintain a fixed height for consistent image size */
+  object-fit: cover;
+  border-radius: 50%; /* Circular images */
+  margin: 0 auto 15px; /* Centering the image and adding margin at the bottom */
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect on image */
+.index a img:hover {
+  transform: scale(1.1);
+}
+
+/* Style for the "no contacts" message */
+.index h1.no-contacts {
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* contact-details */
+/* Style for the contact-details div */
+.contact-details {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers the content inside */
+}
+
+/* Header Style */
+.contact-details h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* Style for the contact information */
+.contact-details div {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; /* Centers the content inside */
+}
+
+.contact-details img {
+  width: 200px;  /* Fixed size for the contact image */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;  /* Makes the image circular */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Add zoom effect when the image is hovered */
+.contact-details img:hover {
+  transform: scale(1.1);
+}
+
+/* Style for the contact title */
+.contact-details h1.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style for the contact snippet */
+.contact-details h3 {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style for the contact body text */
+.contact-details p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for the delete icon */
+.contact-details a.delete {
+  display: inline-block;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.contact-details a.delete img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the delete icon */
+.contact-details a.delete img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-details {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-details h1 {
+    font-size: 2rem;
+  }
+
+  .contact-details img {
+    width: 150px;  /* Smaller image on mobile */
+    height: 150px;
+  }
+
+  .contact-details h1.title {
+    font-size: 1.6rem;
+  }
+
+  .contact-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.95rem;
+  }
+}
+/* backup */
+/* Style for the delete-contacts div */
+.delete-contacts {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Lighter background to indicate deleted status */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers the content */
+}
+
+/* Header Style */
+.delete-contacts h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+/* Container for the deleted contact */
+.delete-contacts div {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; /* Centers the content inside */
+  padding: 20px;
+  background-color: #fff; /* White background to make the contact stand out */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the contact image */
+.delete-contacts img {
+  width: 150px;  /* Smaller image size */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;  /* Circular image */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Add zoom effect on image hover */
+.delete-contacts img:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the contact title */
+.delete-contacts h1.title {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style for the contact snippet */
+.delete-contacts h3 {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for the contact body */
+.delete-contacts p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: Style for any "restore" action if needed */
+.delete-contacts .restore-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the restore button */
+.delete-contacts .restore-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the delete icon (if added for a restore action) */
+.delete-contacts .delete-icon {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the delete icon */
+.delete-contacts .delete-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .delete-contacts {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .delete-contacts h1 {
+    font-size: 2rem;
+  }
+
+  .delete-contacts img {
+    width: 130px;  /* Smaller image on mobile */
+    height: 130px;
+  }
+
+  .delete-contacts h1.title {
+    font-size: 1.5rem;
+  }
+
+  .delete-contacts h3 {
+    font-size: 1.1rem;
+  }
+
+  .delete-contacts p {
+    font-size: 0.95rem;
+  }
+}
